@@ -1,0 +1,130 @@
+/* Reset CSS */
+*{
+    margin: 0;
+	padding: 0;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background: rgb(7,139,142);
+    background: linear-gradient(180deg, rgba(7,139,142,1) 0%, rgba(33,50,65,1) 100%);
+    height: 100%;
+    background-attachment: fixed;
+    padding-top: 40px;
+    color: #3C576B;
+    font-size: 13px;
+}
+
+.container{
+    margin: 50px auto 20px;
+    max-width: 700px;
+    min-height: 500px;
+    background-color: white;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    transform: translateY(-50%);
+}
+
+.section {
+    margin-top: -50px;
+}
+
+.section hr{
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: #8395a7;
+    width: 350px;
+}
+
+.section header h1{
+    font-weight: 700;
+    font-size: 24px;
+    color: #01a3a4;
+    margin-bottom: 15px;
+}
+.section header .cargo{
+    color: #3C576B;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.section header .localizacao{
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #696C6F;
+}
+
+/* Skills */
+.container-skills h3 {
+    font-size: 2rem;
+}
+.container .container-skills{
+    margin-top: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.container-skills .skills{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container-skills .skills img{
+    margin: 0 auto 15px;
+    width: 35px;
+}
+
+.container-skills .skills p{
+    margin-bottom: 25px;
+}
+
+.contato{
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.contato img{
+    height: 50px;
+    margin: 0 auto 10px;
+
+}
+
+footer{
+    margin: 70px auto 30px;
+    display: grid;
+    grid-template: "first second" / 200px 250px;   
+    grid-gap: 30px;
+    max-width: 480px;
+    
+}
+
+footer button{
+    color: white;
+    border-radius: 50px;
+    font-size: 19px;
+    cursor: pointer;   
+    min-height: 55px;
+    padding: 15px 40px;
+    border: none;
+}
+
+footer button:first-child{
+    background: rgb(28,156,237);
+    background: radial-gradient(circle, rgba(28,156,237,1) 0%, rgba(17,121,207,1) 100%);
+    
+    
+
+}
+
+footer button:last-child{
+    background: rgb(216,26,84);
+    background: radial-gradient(circle, rgba(216,26,84,1) 0%, rgba(237,82,41,1) 100%);
+}
+

@@ -5,6 +5,7 @@
     
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 body{
     background: rgb(7,139,142);
     background: linear-gradient(180deg, rgba(7,139,142,1) 0%, rgba(33,50,65,1) 100%);
@@ -22,7 +23,7 @@ body{
     background-color: white;
     text-align: center;
     border-radius: 12px;
-    Box-shadow: 15px 15px 20px black
+    Box-shadow: 15px 15px 20px black;
 }
 
 .container header figure .logo{
@@ -35,9 +36,10 @@ body{
 .container header hr{
     margin: 25px auto 30px;
     border-color: #8395a7;
-    width: 350px;
+    width: 50%;
 }
 
+/* Container */
 .container header h1{
     font-weight: 700;
     font-size: 24px;
@@ -90,7 +92,6 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-
 .contato figure img{
     height: 45px;
     margin: 0 auto 10px;
@@ -112,9 +113,6 @@ footer{
     grid-template: "email sobre" / 1fr 1fr;   
     max-width: 510px; 
 }
-
-
-
 
 footer a button{
     color: white;
@@ -146,4 +144,18 @@ footer a .sobre{
     background: radial-gradient(circle, rgba(216,26,84,1) 0%, rgba(237,82,41,1) 100%);
     box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.35);
 }
+@media (max-width: 450px){
+    footer{
+        grid-template: "email" "sobre" / 1fr;
+        grid-gap: 10px;
+    }
+    footer a button{
+        width: 95%;
+    }
+}
+@media (max-width: 320px){
+    .container header hr{
+       width: 80%;
+   }
 
+}
